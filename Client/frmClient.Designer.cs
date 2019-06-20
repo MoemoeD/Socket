@@ -41,84 +41,95 @@
             // 
             // btnConnect
             // 
-            this.btnConnect.Location = new System.Drawing.Point(500, 42);
+            this.btnConnect.Location = new System.Drawing.Point(375, 34);
+            this.btnConnect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnConnect.Name = "btnConnect";
-            this.btnConnect.Size = new System.Drawing.Size(120, 30);
+            this.btnConnect.Size = new System.Drawing.Size(90, 24);
             this.btnConnect.TabIndex = 0;
             this.btnConnect.Text = "连接";
             this.btnConnect.UseVisualStyleBackColor = true;
+            this.btnConnect.Click += new System.EventHandler(this.btnConnect_Click);
             // 
             // btnDisconnect
             // 
-            this.btnDisconnect.Location = new System.Drawing.Point(650, 42);
+            this.btnDisconnect.Location = new System.Drawing.Point(488, 34);
+            this.btnDisconnect.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnDisconnect.Name = "btnDisconnect";
-            this.btnDisconnect.Size = new System.Drawing.Size(120, 30);
+            this.btnDisconnect.Size = new System.Drawing.Size(90, 24);
             this.btnDisconnect.TabIndex = 1;
             this.btnDisconnect.Text = "断开连接";
             this.btnDisconnect.UseVisualStyleBackColor = true;
             // 
             // btnSend
             // 
-            this.btnSend.Location = new System.Drawing.Point(750, 325);
+            this.btnSend.Location = new System.Drawing.Point(562, 260);
+            this.btnSend.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSend.Name = "btnSend";
-            this.btnSend.Size = new System.Drawing.Size(100, 200);
+            this.btnSend.Size = new System.Drawing.Size(75, 160);
             this.btnSend.TabIndex = 2;
             this.btnSend.Text = "发送";
             this.btnSend.UseVisualStyleBackColor = true;
+            this.btnSend.Click += new System.EventHandler(this.btnSend_Click);
             // 
             // txtIP
             // 
-            this.txtIP.Location = new System.Drawing.Point(87, 47);
+            this.txtIP.Location = new System.Drawing.Point(65, 38);
+            this.txtIP.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtIP.Name = "txtIP";
-            this.txtIP.Size = new System.Drawing.Size(200, 25);
+            this.txtIP.Size = new System.Drawing.Size(151, 21);
             this.txtIP.TabIndex = 3;
             // 
             // txtPort
             // 
-            this.txtPort.Location = new System.Drawing.Point(353, 47);
+            this.txtPort.Location = new System.Drawing.Point(265, 38);
+            this.txtPort.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPort.Name = "txtPort";
-            this.txtPort.Size = new System.Drawing.Size(100, 25);
+            this.txtPort.Size = new System.Drawing.Size(76, 21);
             this.txtPort.TabIndex = 4;
             // 
             // lblIP
             // 
             this.lblIP.AutoSize = true;
-            this.lblIP.Location = new System.Drawing.Point(50, 50);
+            this.lblIP.Location = new System.Drawing.Point(38, 40);
+            this.lblIP.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblIP.Name = "lblIP";
-            this.lblIP.Size = new System.Drawing.Size(31, 15);
+            this.lblIP.Size = new System.Drawing.Size(23, 12);
             this.lblIP.TabIndex = 5;
             this.lblIP.Text = "IP:";
             // 
             // lblPort
             // 
             this.lblPort.AutoSize = true;
-            this.lblPort.Location = new System.Drawing.Point(300, 50);
+            this.lblPort.Location = new System.Drawing.Point(225, 40);
+            this.lblPort.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblPort.Name = "lblPort";
-            this.lblPort.Size = new System.Drawing.Size(47, 15);
+            this.lblPort.Size = new System.Drawing.Size(35, 12);
             this.lblPort.TabIndex = 6;
             this.lblPort.Text = "Port:";
             // 
             // txtMessage
             // 
-            this.txtMessage.Location = new System.Drawing.Point(50, 100);
+            this.txtMessage.Location = new System.Drawing.Point(38, 80);
+            this.txtMessage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtMessage.Multiline = true;
             this.txtMessage.Name = "txtMessage";
-            this.txtMessage.Size = new System.Drawing.Size(800, 200);
+            this.txtMessage.Size = new System.Drawing.Size(601, 161);
             this.txtMessage.TabIndex = 7;
             // 
             // txtSend
             // 
-            this.txtSend.Location = new System.Drawing.Point(50, 325);
+            this.txtSend.Location = new System.Drawing.Point(38, 260);
+            this.txtSend.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSend.Multiline = true;
             this.txtSend.Name = "txtSend";
-            this.txtSend.Size = new System.Drawing.Size(675, 200);
+            this.txtSend.Size = new System.Drawing.Size(507, 161);
             this.txtSend.TabIndex = 8;
             // 
             // frmClient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(882, 553);
+            this.ClientSize = new System.Drawing.Size(662, 442);
             this.Controls.Add(this.txtSend);
             this.Controls.Add(this.txtMessage);
             this.Controls.Add(this.lblPort);
@@ -128,6 +139,7 @@
             this.Controls.Add(this.btnSend);
             this.Controls.Add(this.btnDisconnect);
             this.Controls.Add(this.btnConnect);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmClient";
             this.Text = "Client";
             this.ResumeLayout(false);
